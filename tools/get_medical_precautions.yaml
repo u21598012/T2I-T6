@@ -1,0 +1,32 @@
+---
+apiVersion: ark.mckinsey.com/v1alpha1
+kind: Tool
+metadata:
+  name: get-medical-precautions
+  labels:
+    category: healthcare
+    method: get
+spec:
+  type: http
+  description: "Retrieve medical precautions based on condition and age group"
+  inputSchema:
+    type: object
+    properties:
+      condition:
+        type: string
+        description: Medical condition (e.g., 'Diabetes', 'Hypertension')
+      ageGroup:
+        type: string
+        description: Age group category (Children, Adults, Middle-Aged, Seniors)
+    required: ["condition", "ageGroup"]
+  http:
+    url: http://host.docker.internal:5000/medicalPrecautions?condition_like={{.input.condition}}&ageGroup={{.input.ageGroup}}
+    method: GET
+    headers:
+      - name: "Accept"
+        value:
+          value: "application/json"
+      - name: "User-Agent"
+        value:
+          value: "ARK-Platform/1.0"
+    timeout: 30s

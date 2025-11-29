@@ -1,0 +1,16 @@
+apiVersion: ark.mckinsey.com/v1alpha1
+kind: Agent
+metadata:
+  name: personal-data-retrieval-agent
+spec:
+  prompt: |
+    When a user introduces themselves with a message like "Hi, this is [name] [surname]", you should:
+    1. Extract their first name and surname from the message
+    2. Use the get-patient-info tool to retrieve their medical information
+    3. Return the data in between <PERSONAL_DATA> and </PERSONAL_DATA> tags, don't use JSON format
+
+  tools:
+    - name: get-patient-info
+      type: custom
+    - name: list-patients
+      type: custom

@@ -1,0 +1,295 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "Liora",
+      "surname": "Vantell",
+      "age": 56,
+      "gender": "Female",
+      "chronicDisease": "Type 2 Diabetes",
+      "allergies": [],
+      "yesterdayBreakfast": "Oatmeal with berries",
+      "yesterdayLunch": "Grilled chicken salad",
+      "yesterdayDinner": "Pasta with cream sauce",
+      "currentStatus": "Liora has moderately elevated blood glucose levels despite regular medication adherence. She reports occasional numbness in her feet and increased fatigue. Her last checkup indicated early signs of peripheral neuropathy, and her physician advised tighter glucose monitoring."
+    },
+    {
+      "id": 2,
+      "name": "Marcus",
+      "surname": "Redden",
+      "age": 41,
+      "gender": "Male",
+      "chronicDisease": "Chronic Hypertension",
+      "allergies": ["shellfish"],
+      "yesterdayBreakfast": "Toast with butter",
+      "yesterdayLunch": "Fast food burger and fries",
+      "yesterdayDinner": "Steak with mashed potatoes",
+      "currentStatus": "Marcus experiences fluctuating blood pressure levels, especially during periods of stress. He reports mild headaches and occasional dizziness. His last clinical review showed borderline left-ventricular thickening, suggesting the need for consistent blood pressure control."
+    },
+    {
+      "id": 3,
+      "name": "Selene",
+      "surname": "Jorvik",
+      "age": 67,
+      "gender": "Female",
+      "chronicDisease": "COPD (Chronic Obstructive Pulmonary Disease)",
+      "allergies": ["dairy"],
+      "yesterdayBreakfast": "Tea and toast",
+      "yesterdayLunch": "Vegetable soup",
+      "yesterdayDinner": "Baked fish with vegetables",
+      "currentStatus": "Selene has a persistent productive cough and shortness of breath during light physical activity. Recent spirometry results show a decline from her baseline. Her physician noted mild exacerbation symptoms and recommended closer monitoring of respiratory function."
+    }
+  ],
+  "medicalPrecautions": [
+    {
+      "id": 1,
+      "condition": "Diabetes",
+      "ageGroup": "Children",
+      "ageRange": "0-12",
+      "precautions": [
+        "Monitor glucose levels closely during illness or unusual activity.",
+        "Ensure regular eye checks to detect early vision changes.",
+        "Provide supervision during physical activity to avoid overexertion.",
+        "Check feet weekly for cuts or bruises.",
+        "Track appetite and energy changes and report patterns."
+      ],
+      "genderNotes": "Women may experience glucose variation during hormonal phases; monitor more frequently when symptomatic."
+    },
+    {
+      "id": 2,
+      "condition": "Diabetes",
+      "ageGroup": "Adults",
+      "ageRange": "13-40",
+      "precautions": [
+        "Maintain consistent daily eating routines to stabilize glucose.",
+        "Perform routine foot checks for numbness or temperature changes.",
+        "Monitor for early signs of hypoglycemia such as sweating or confusion.",
+        "Schedule regular eye exams.",
+        "Use balanced activity levels appropriate to stamina."
+      ],
+      "genderNotes": "Women may experience glucose variation during hormonal phases; monitor more frequently when symptomatic."
+    },
+    {
+      "id": 3,
+      "condition": "Diabetes",
+      "ageGroup": "Middle-Aged",
+      "ageRange": "41-60",
+      "precautions": [
+        "Inspect feet daily for reduced sensation or small injuries.",
+        "Adjust activity intensity to avoid aggravating neuropathy symptoms.",
+        "Monitor glucose trends, especially during stress or poor sleep.",
+        "Schedule semi-annual eye and nerve evaluations.",
+        "Track wound healing and report delays."
+      ],
+      "genderNotes": "Women may experience glucose variation during hormonal phases; monitor more frequently when symptomatic."
+    },
+    {
+      "id": 4,
+      "condition": "Diabetes",
+      "ageGroup": "Seniors",
+      "ageRange": "61+",
+      "precautions": [
+        "Prioritize stability and fall-prevention during activity.",
+        "Check feet daily for color changes, swelling, or numbness.",
+        "Monitor glucose more frequently if appetite or routine varies.",
+        "Report any vision disturbances immediately.",
+        "Keep consistent hydration to avoid glucose fluctuations."
+      ],
+      "genderNotes": "Women may experience glucose variation during hormonal phases; monitor more frequently when symptomatic."
+    },
+    {
+      "id": 5,
+      "condition": "Hypertension",
+      "ageGroup": "Children",
+      "ageRange": "0-12",
+      "precautions": [
+        "Encourage calm activities and avoid intense physical exertion.",
+        "Monitor for headaches or dizziness and report promptly.",
+        "Maintain a low-sodium diet appropriate for the child's needs.",
+        "Ensure restful sleep to support blood pressure stability.",
+        "Track unusual fatigue or irritability."
+      ],
+      "genderNotes": "Women may experience blood pressure changes during hormonal transitions (e.g., menopause); observe any pattern shifts."
+    },
+    {
+      "id": 6,
+      "condition": "Hypertension",
+      "ageGroup": "Adults",
+      "ageRange": "13-40",
+      "precautions": [
+        "Measure blood pressure regularly and consistently.",
+        "Reduce exposure to high-stress environments where possible.",
+        "Maintain hydration, especially during activity or heat.",
+        "Avoid high-sodium processed foods.",
+        "Observe for dizziness or chest tightness during exertion."
+      ],
+      "genderNotes": "Women may experience blood pressure changes during hormonal transitions (e.g., menopause); observe any pattern shifts."
+    },
+    {
+      "id": 7,
+      "condition": "Hypertension",
+      "ageGroup": "Middle-Aged",
+      "ageRange": "41-60",
+      "precautions": [
+        "Monitor for morning blood pressure spikes with consistent readings.",
+        "Engage in stable, moderate physical activity without sudden intensity changes.",
+        "Track weight and cardiovascular endurance.",
+        "Be alert for persistent headaches or swelling in the ankles.",
+        "Minimize long periods of sedentary behavior."
+      ],
+      "genderNotes": "Women may experience blood pressure changes during hormonal transitions (e.g., menopause); observe any pattern shifts."
+    },
+    {
+      "id": 8,
+      "condition": "Hypertension",
+      "ageGroup": "Seniors",
+      "ageRange": "61+",
+      "precautions": [
+        "Monitor for dizziness when standing (orthostatic changes).",
+        "Maintain gentle, steady movement routines to support circulation.",
+        "Limit rapid posture changes to prevent blood pressure drops.",
+        "Track ankle or foot swelling daily.",
+        "Attend regular cardiovascular assessments."
+      ],
+      "genderNotes": "Women may experience blood pressure changes during hormonal transitions (e.g., menopause); observe any pattern shifts."
+    }
+  ],
+  "dietaryRecommendations": [
+    {
+      "id": 1,
+      "condition": "Diabetes",
+      "ageGroup": "Children",
+      "ageRange": "0-12",
+      "generalRecommendations": [
+        "High-fiber snacks (apple slices, whole-grain crackers).",
+        "Balanced meals: lean protein + whole grains + vegetables.",
+        "Avoid sugary drinks; choose water or diluted juice.",
+        "Slow-release carbs: oatmeal, sweet potatoes."
+      ],
+      "lastMealGuidance": {
+        "highCarbSugary": "Choose a low-GI snack (nuts, plain yogurt) and monitor glucose.",
+        "highFatHeavy": "Offer small, fibrous snack (apple, carrot sticks) and delay large meals.",
+        "skipped": "Give a small balanced meal (scrambled egg + whole-grain toast) to prevent hypoglycemia."
+      }
+    },
+    {
+      "id": 2,
+      "condition": "Diabetes",
+      "ageGroup": "Adults",
+      "ageRange": "13-40",
+      "generalRecommendations": [
+        "Low-glycemic foods: brown rice, quinoa, beans.",
+        "Lean proteins: fish, chicken, tofu.",
+        "Limit refined sugar and white-flour foods.",
+        "Vegetables and high-fiber fruits: berries, pears."
+      ],
+      "lastMealGuidance": {
+        "highCarbSugary": "Prioritize protein+veg (grilled chicken salad) and avoid extra carbs.",
+        "highFatHeavy": "Choose a light, fiber-rich meal (vegetable soup + whole-grain roll).",
+        "skipped": "Eat a small balanced meal with protein and complex carbs to stabilise glucose."
+      }
+    },
+    {
+      "id": 3,
+      "condition": "Diabetes",
+      "ageGroup": "Middle-Aged",
+      "ageRange": "41-60",
+      "generalRecommendations": [
+        "Whole grains and leafy greens.",
+        "Heart-healthy fats: olive oil, avocados, nuts.",
+        "Reduce portions of starchy foods.",
+        "Light evening meals to stabilize glucose."
+      ],
+      "lastMealGuidance": {
+        "highCarbSugary": "Opt for protein-forward meals and non-starchy vegetables.",
+        "highFatHeavy": "Next meal should be lighter and high-fiber to aid glucose control.",
+        "skipped": "Have a modest portion of whole grains + lean protein and monitor trends."
+      }
+    },
+    {
+      "id": 4,
+      "condition": "Diabetes",
+      "ageGroup": "Seniors",
+      "ageRange": "61+",
+      "generalRecommendations": [
+        "Soft, high-fiber foods: oatmeal, lentils.",
+        "Small, regular balanced meals.",
+        "Replace sugary snacks with nuts or low-sugar yogurt.",
+        "Maintain hydration with water or herbal teas."
+      ],
+      "lastMealGuidance": {
+        "highCarbSugary": "Choose a small protein snack and check glucose more frequently.",
+        "highFatHeavy": "Prefer easy-to-digest fiber-rich foods and avoid large portions.",
+        "skipped": "Offer a small, easy-to-digest balanced meal (porridge + soft fruit)."
+      }
+    },
+    {
+      "id": 5,
+      "condition": "Hypertension",
+      "ageGroup": "Children",
+      "ageRange": "0-12",
+      "generalRecommendations": [
+        "Reduce salty snacks and processed foods.",
+        "Fresh fruits, vegetables, whole grains.",
+        "Lean proteins: chicken, beans, eggs.",
+        "Encourage water instead of flavored drinks."
+      ],
+      "lastMealGuidance": {
+        "highSodium": "Follow with low-sodium hydration (water) and a potassium-rich snack (banana, yogurt).",
+        "highFatHeavy": "Choose light, vegetable-based meals next.",
+        "skipped": "Provide a low-sodium balanced meal (scrambled egg + whole-grain toast)."
+      }
+    },
+    {
+      "id": 6,
+      "condition": "Hypertension",
+      "ageGroup": "Adults",
+      "ageRange": "13-40",
+      "generalRecommendations": [
+        "DASH-style meals: fruits, vegetables, whole grains.",
+        "Prefer fish or poultry instead of red meat.",
+        "Reduce caffeine; avoid energy drinks.",
+        "Choose low-sodium packaged foods."
+      ],
+      "lastMealGuidance": {
+        "highSodium": "Next meal should be low-sodium and include potassium-rich foods (spinach, beans).",
+        "highFatHeavy": "Pick a lighter, vegetable-forward meal.",
+        "skipped": "Eat a modest DASH-style meal to avoid blood-pressure fluctuations."
+      }
+    },
+    {
+      "id": 7,
+      "condition": "Hypertension",
+      "ageGroup": "Middle-Aged",
+      "ageRange": "41-60",
+      "generalRecommendations": [
+        "Potassium-rich foods: bananas, spinach, beans.",
+        "Reduce saturated fats.",
+        "Avoid pickled or heavily salted foods.",
+        "Prefer homemade meals to control sodium."
+      ],
+      "lastMealGuidance": {
+        "highSodium": "Balance with potassium-rich vegetables and low-sodium choices next.",
+        "highFatHeavy": "Choose lighter, fiber-rich meals to support circulation.",
+        "skipped": "Have a small, balanced low-sodium meal and hydrate steadily."
+      }
+    },
+    {
+      "id": 8,
+      "condition": "Hypertension",
+      "ageGroup": "Seniors",
+      "ageRange": "61+",
+      "generalRecommendations": [
+        "Low-sodium soups and soft vegetables.",
+        "Increase dietary fiber.",
+        "Use herbs instead of salt.",
+        "Maintain consistent hydration."
+      ],
+      "lastMealGuidance": {
+        "highSodium": "Follow with extra water and low-sodium, potassium-rich foods.",
+        "highFatHeavy": "Select soft, easy-to-digest fiber-rich foods next.",
+        "skipped": "Provide a small, low-sodium, easy-to-eat meal and ensure fluids."
+      }
+    }
+  ]
+}
