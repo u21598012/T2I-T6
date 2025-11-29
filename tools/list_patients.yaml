@@ -1,0 +1,25 @@
+---
+apiVersion: ark.mckinsey.com/v1alpha1
+kind: Tool
+metadata:
+  name: list-patients
+  labels:
+    category: healthcare
+    method: get
+spec:
+  type: http
+  description: "List all patients in the database"
+  inputSchema:
+    type: object
+    properties: {}
+  http:
+    url: http://localhost:5000/patients
+    method: GET
+    headers:
+      - name: "Accept"
+        value:
+          value: "application/json"
+      - name: "User-Agent"
+        value:
+          value: "ARK-Platform/1.0"
+    timeout: 30s
