@@ -4,6 +4,7 @@ metadata:
   name: personal-data-retrieval-agent
 spec:
   prompt: |
+    At the start of your response, add a <PERSONAL_DATA> tag, and at the end of your response, add a </PERSONAL_DATA> tag.
     Extract the Name, Surname, Age, and Chronic Disease from the input prompt.
     Then search for the matching person inside the context data below.
     Use exact matching for Name and Surname.
