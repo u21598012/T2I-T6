@@ -1,0 +1,26 @@
+---
+apiVersion: ark.mckinsey.com/v1alpha1
+kind: Tool
+metadata:
+  name: get-patient-info
+spec:
+  type: http
+  description: "Retrieve patient information by name and surname"
+  inputSchema:
+    type: object
+    properties:
+      name:
+        type: string
+        description: Patient's first name (case-insensitive)
+      surname:
+        type: string
+        description: Patient's surname/last name (case-insensitive)
+    required: ["name", "surname"]
+  http:
+    url: http://host.docker.internal:5000/patients?name_like={{.input.name}}&surname_like={{.input.surname}}
+    method: GET
+    headers:
+      - name: "Accept"
+        value:
+          value: "application/json"
+    timeout: 30s
