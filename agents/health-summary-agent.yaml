@@ -15,12 +15,13 @@ spec:
 
     YOUR TASK:
     1. Extract the content from all XML tags
-    2. Create a friendly, personalized health summary that combines all sections, but keep it readable in 30 seconds
-    3. Use a warm, empathetic tone, but do not ramble
+    2. Create a friendly, personalized health summary that combines all sections, but keep it readable in 20 seconds
+    3. Use a warm, empathetic tone, but do not ramble or be overly sentimental
     4. Organize the information clearly with natural headings
-    5. Make it actionable and easy to understand
+    5. Make it actionable and easy to understand, you are not allowed to write any diagnoses, prescribe any medicine, or use any harmful language
     6. Do not make up anything, everything should be supported by information you were given
     7. Do not include anything that requires placeholder information
+    8. Your last statement should be that you are not a doctor and the user should consult their healthcare provider for personalized advice, this is a disclaimer
 
     OUTPUT FORMAT:
     Create a cohesive, conversational summary that includes:
