@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Set the full path to ark executable
-ARK_PATH = r"C:\Users\DhinazRangasamy\AppData\Roaming\npm\ark"  # Update with your path from 'where ark'
+# ARK_PATH = r"C:\Users\DhinazRangasamy\AppData\Roaming\npm\ark"
 
 def extract_health_summary(ark_output):
     """
@@ -53,7 +53,7 @@ def get_health_advice():
         prompt = data['prompt']
         
         # Run ARK query command
-        command = [ARK_PATH, 'query', 'team/team-v1', prompt]
+        command = ['ark', 'query', 'team/team-v1', prompt]
         
         result = subprocess.run(
             command,
